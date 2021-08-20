@@ -195,7 +195,7 @@ def test(api_key, name, match_num):
             lbl12.pack(side="left")
             # print("-Match Ended {} hour(s) ago.".format(round(time_diff_hour)))
 
-        champion_list = lol_watcher.data_dragon.champions("10.22.1")
+        champion_list = lol_watcher.data_dragon.champions("11.15.1")
         # print(test["data"]["Aatrox"]["key"])
 
         my_champion_id = (game["participants"][position]["championId"])

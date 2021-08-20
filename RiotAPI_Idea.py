@@ -4,7 +4,7 @@ from datetime import datetime
 name = input("ID: ")
 match_num = int(input("Match: "))
 
-lol_watcher = LolWatcher('')
+lol_watcher = LolWatcher('RGAPI-37ed0ba4-732a-4ba3-9567-fd888081c771')
 
 my_region = 'na1'
 
