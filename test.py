@@ -2,6 +2,7 @@ from riotwatcher import LolWatcher
 from datetime import datetime
 
 name = input("ID: ")
+mnum = int(input("Match: "))
 
 lol_watcher = LolWatcher('RGAPI-ac524dea-9e7e-4a8d-a6a4-eee82569dce1', default_match_v5=True)
 
@@ -18,6 +19,9 @@ print(puuid)
 matchlist = lol_watcher.match.matchlist_by_puuid('AMERICAS', puuid)
 
 # mlst = lol_watcher.match_v5(region=my_region, encrypted_summoner_id=puuid)
-print(matchlist)
+match = matchlist[mnum]
 
+sample = lol_watcher.match.by_id('AMERICAS', match)
+
+print(sample)
 
